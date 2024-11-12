@@ -76,7 +76,7 @@ class Biblioteca {
                     libro.devolver();
                     System.out.println("El libro \"" + titulo + "\" ha sido devuelto.");
 
-                    // Asignar el libro al siguiente usuario en la cola
+                   
                     if (!colaSolicitudes.isEmpty()) {
                         String siguienteUsuario = colaSolicitudes.poll();
                         libro.prestar();
@@ -104,7 +104,7 @@ public class SistemaBiblioteca {
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca();
 
-        // Agregar libros a la biblioteca
+        
         biblioteca.agregarLibro(new Libro("No puedes hacerme daño", "David Goggins"));
         biblioteca.agregarLibro(new Libro("El hombre en busca de sentido", "Viktor Frankl"));
         biblioteca.agregarLibro(new Libro("La sabiduría de los psicópatas", "Kevin Dutton"));
